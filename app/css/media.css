@@ -1,0 +1,7 @@
+@media screen and (max-width: 992px) {
+  .header {
+    text-align: center; } }
+
+@media screen and (min-width: 993px) {
+  body {
+    width: 100%; } }

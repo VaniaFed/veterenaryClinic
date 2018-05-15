@@ -8,7 +8,7 @@ a {
 body, html {
   height: 100%;
   width: 100%;
-  font: 16px/1.5 Roboto, Arial, Sans-serif; }
+  font: 16px/1.5 Montserrat, Arial, Sans-serif; }
 
 .container {
   max-width: 1170px;
@@ -16,13 +16,22 @@ body, html {
   margin: 0 auto;
   overflow: hidden; }
 
+.title-1 {
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 60px; }
+
+.title-2 {
+  font-size: 30px;
+  font-weight: 400; }
+
 .header {
-  padding: 200px 0;
   background: url(../img/bg.jpg) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset;
-          box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset; }
+          box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset;
+  padding: 200px 20px; }
 
 .header__name-company {
   color: #fff;
@@ -46,3 +55,8 @@ body, html {
   font-weight: bold;
   display: inline-block;
   margin: 20px 0 0; }
+
+.section {
+  padding: 90px 0; }
+  .section:nth-child(even) {
+    background: #efefef; }
