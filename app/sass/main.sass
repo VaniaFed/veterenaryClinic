@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+
 h1, h2, h3, h4, h5, h6 
   padding: 0
   margin: 0
@@ -9,6 +12,7 @@ body, html
   height: 100%
   width: 100%
   font: 16px/1.5 Montserrat, Arial, Sans-serif
+  min-width: 230px
 
 .container
   max-width: 1170px
@@ -19,7 +23,7 @@ body, html
 .title-1
   font-size: 48px
   font-weight: bold
-  padding-bottom: 35px
+  padding-bottom: 50px
 
 .title-2
   font-size: 30px
@@ -40,11 +44,11 @@ body, html
 .header__name-company
   color: #fff
   font-size: 60px
-
+  
 .header__tagline
   color: #ccc
   font-size: 24px
-  font-weight: 400
+  font-weight: 300
 
 .header__adres
   font-size: 18px
@@ -62,12 +66,14 @@ body, html
   font-weight: bold
   display: inline-block
   margin: 40px 0 0
+  &:hover
+    background: #ff2b2b
 
 
 // SERVICES
 
 .section
-  padding: 90px 0
+  padding: 100px 0
   &:nth-child(even)
     background: #efefef
 
@@ -85,6 +91,9 @@ body, html
     margin-left: 1px
 
 .contacts__title-2
-  margin: 20px 0 10px
+  margin: 40px 0 10px
   &:first-child
     margin-top: 0
+
+.section-map
+  width: 100%

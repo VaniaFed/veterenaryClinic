@@ -1,7 +1,31 @@
 @media screen and (max-width: 992px) {
   .header {
-    text-align: center; } }
+    text-align: center; }
+  .section {
+    text-align: center; }
+    .section-right {
+      margin-top: 50px; }
+  .section-left,
+  .section-right {
+    float: none;
+    width: 100%; }
+  .section-map {
+    height: 400px; } }
+
+@media screen and (max-width: 510px) {
+  .header__name-company {
+    font-size: 40px; }
+  .header__tagline {
+    font-size: 22px; } }
 
 @media screen and (min-width: 993px) {
   body {
-    width: 100%; } }
+    width: 100%; }
+  .section-left, .section-right {
+    float: left; }
+  .section-left {
+    width: 40%; }
+  .section-right {
+    width: 60%; }
+  .section-map {
+    height: 429px; } }
