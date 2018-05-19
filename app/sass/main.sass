@@ -1,9 +1,19 @@
+.clearfix,
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: block
+  clear: both
+
 *
   box-sizing: border-box
 
 h1, h2, h3, h4, h5, h6 
   padding: 0
   margin: 0
+
+img
+  width: 100%
 
 a
   text-decoration: none
@@ -12,13 +22,13 @@ body, html
   height: 100%
   width: 100%
   font: 16px/1.5 Montserrat, Arial, Sans-serif
-  min-width: 230px
+  min-width: 320px
 
 .container
   max-width: 1170px
   width: 100%
   margin: 0 auto
-  overflow: hidden
+  padding: 20px
 
 .title-1
   font-size: 48px
@@ -39,7 +49,7 @@ body, html
   background: url(../img/bg.jpg) no-repeat center
   background-size: cover
   box-shadow: 0 0 0 1500px rgba(0, 0, 0, .7) inset
-  padding: 200px 20px
+  padding: 200px 0
 
 .header__name-company
   color: #fff
@@ -67,7 +77,9 @@ body, html
   display: inline-block
   margin: 40px 0 0
   &:hover
-    background: #ff2b2b
+    background: #ff3b2f
+  &:active
+    background: #ea2727
 
 
 // SERVICES
@@ -90,6 +102,10 @@ body, html
   &-schedule
     margin-left: 1px
 
+.contacts__info-link
+  text-decoration: underline
+  color: #000
+
 .contacts__title-2
   margin: 40px 0 10px
   &:first-child
@@ -97,3 +113,7 @@ body, html
 
 .section-map
   width: 100%
+
+
+// PHOTO
+

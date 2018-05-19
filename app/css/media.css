@@ -1,6 +1,8 @@
 @media screen and (max-width: 992px) {
   .header {
     text-align: center; }
+  .header__tagline {
+    margin-top: 20px; }
   .section {
     text-align: center; }
     .section-right {
@@ -10,13 +12,42 @@
     float: none;
     width: 100%; }
   .section-map {
-    height: 400px; } }
+    height: 400px; }
+  .photo-item {
+    max-width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px auto;
+    background: #fff; }
+    .photo-item:last-child {
+      margin: 0 auto; }
+  .photo__img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; } }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 520px) {
   .header__name-company {
-    font-size: 40px; }
+    font-size: 36px; }
   .header__tagline {
-    font-size: 22px; } }
+    font-size: 20px; }
+  .title-1 {
+    font-size: 30px; }
+  .title-2 {
+    font-size: 24px; } }
+
+@media screen and (max-width: 380px) {
+  .header__name-company {
+    font-size: 30px; }
+  .header__tagline {
+    font-size: 20px; }
+  .title-1 {
+    font-size: 30px; }
+  .title-2 {
+    font-size: 24px; } }
 
 @media screen and (min-width: 993px) {
   body {
@@ -28,4 +59,16 @@
   .section-right {
     width: 60%; }
   .section-map {
-    height: 429px; } }
+    height: 429px; }
+  .photo-column {
+    width: 33%;
+    float: left;
+    padding-right: 10px; }
+    .photo-column:last-child {
+      padding: 0; }
+  .photo-item {
+    padding-bottom: 10px;
+    max-height: 500px;
+    overflow: hidden; }
+    .photo-item:last-child {
+      padding-bottom: 0; } }

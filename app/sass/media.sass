@@ -4,6 +4,9 @@
   .header
     text-align: center
   
+  .header__tagline
+    margin-top: 20px
+
   .section
     text-align: center
     &-right
@@ -17,12 +20,49 @@
   .section-map
     height: 400px
 
-@media screen and (max-width: 510px)
-  .header__name-company
-    font-size: 40px
-  .header__tagline
-    font-size: 22px
+  .photo-item
+    max-width: 300px
+    height: 300px
+    position: relative
+    margin: 20px auto
+    background: #fff
+    &:last-child
+      margin: 0 auto
 
+  .photo__img
+    margin: auto
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+@media screen and (max-width: 520px)
+  // HEADER
+  .header__name-company
+    font-size: 36px
+  .header__tagline
+    font-size: 20px
+
+  .title-1
+    font-size: 30px
+
+  .title-2
+    font-size: 24px
+
+
+@media screen and (max-width: 380px)
+  // HEADER
+  .header__name-company
+    font-size: 30px
+  .header__tagline
+    font-size: 20px
+
+  .title-1
+    font-size: 30px
+
+  .title-2
+    font-size: 24px
 
 //	DESKTOP ( > 993px)
 
@@ -41,3 +81,19 @@
 
   .section-map
     height: 429px
+
+  .photo
+    &-column
+      width: 33%
+      float: left
+      padding-right: 10px
+      &:last-child
+        padding: 0
+
+    &-item
+      padding-bottom: 10px
+      max-height: 500px
+      overflow: hidden
+      &:last-child
+        padding-bottom: 0
+      
