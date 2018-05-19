@@ -3,12 +3,14 @@
 @media screen and (max-width: 992px)
   .header
     text-align: center
+    padding: 50px 0 
   
   .header__tagline
     margin-top: 20px
 
   .section
     text-align: center
+    padding: 40px 0
     &-right
       margin-top: 50px
 
@@ -69,6 +71,12 @@
 @media screen and (min-width: 993px)
   body
     width: 100%
+  
+  .header
+    padding: 200px 0
+
+  .section
+    padding: 100px 0
 
   .section-left, .section-right
     float: left
@@ -84,16 +92,12 @@
 
   .photo
     &-column
-      width: 33%
+      font-size: 0
+      width: 50%
       float: left
       padding-right: 10px
-      &:last-child
-        padding: 0
 
     &-item
       padding-bottom: 10px
-      max-height: 500px
-      overflow: hidden
       &:last-child
         padding-bottom: 0
-      

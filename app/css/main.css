@@ -48,8 +48,7 @@ body, html {
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset;
-          box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset;
-  padding: 200px 0; }
+          box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset; }
 
 .header__name-company {
   color: #fff;
@@ -81,10 +80,8 @@ body, html {
   .header__btn-call:active {
     background: #ea2727; }
 
-.section {
-  padding: 100px 0; }
-  .section:nth-child(even) {
-    background: #efefef; }
+.section:nth-child(even) {
+  background: #efefef; }
 
 .contacts__fa {
   margin-right: 20px;
