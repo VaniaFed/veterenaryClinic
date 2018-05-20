@@ -39,6 +39,12 @@
     bottom: 0
     left: 0
 
+  .form-submit
+    width: 100%
+
+  .link-to-top
+    display: none
+
 @media screen and (max-width: 520px)
   // HEADER
   .header__name-company
@@ -101,3 +107,39 @@
       padding-bottom: 10px
       &:last-child
         padding-bottom: 0
+
+  // FORM
+
+  .form-container
+    width: 100%
+    max-width: 400px
+
+  .link-to-top
+    position: fixed
+    left: 50px
+    bottom: 50px
+    width: 75px
+    height: 75px
+    border-radius: 50%
+    background: #ea2727
+    transition: all .3s
+    &:hover
+      background: #fff
+      border: 2px solid #ea2727
+      svg
+        transition: transform .5s
+        transform: translateY(-8px)
+      svg .active-path
+        fill: #ea2727
+    svg
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-top: -12px
+      margin-left: -15px
+      transition: margin .2s
+      .active-path
+        fill: #fff
+        transition: fill .35s

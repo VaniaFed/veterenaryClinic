@@ -12,6 +12,11 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+    <a class="link-to-top" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+            <path class="active-path" fill="#020101" d="M7.7 94.4c1.6 1.6 4.2 1.6 5.8 0l51-51.1 51.1 51.1c1.6 1.6 4.2 1.6 5.8 0 1.6-1.6 1.6-4.2 0-5.8L67.5 34.7c-.8-.8-1.8-1.2-2.9-1.2-1 0-2.1.4-2.9 1.2L7.8 88.6c-1.7 1.6-1.7 4.2-.1 5.8z" data-old_color="#0A0707" data-original="#000000"></path>
+        </svg>
+    </a>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -69,9 +74,22 @@
                 </div>
             </div>
         </section>
+    <section class="section section-form">
+        <div class="container">
+            <div class="title-1">Оставьте заявку</div>
+            <div class="form-text">Отправьте заявку и мы свяжемся с вами</div>
+            <form class="form-form" action="">
+                <div class="form-container">
+                    <label class="form-label" for="phone">Номер телефона</label>
+                    <input class="form-input__phone" id="phone" required name="phone" type="text" placeholder="+79000000000">
+                    <label class="form-label label-textarea" for="message">Ваше сообщение</label>
+                    <textarea class="form-textarea" name="" id="message" cols="30" rows="10" placeholder="Опишите вашу проблему" required></textarea>
+                    <input class="form-submit" type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </section>
     </div>
-    <footer class="footer">
-    </footer>
     <script src="js/libs.min.js"></script>
 </body>
 </html>

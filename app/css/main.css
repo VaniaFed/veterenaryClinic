@@ -13,8 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0; }
 
+label, input, textarea {
+  display: block; }
+
 img {
   width: 100%; }
+
+input, input:active {
+  outline: none; }
 
 a {
   text-decoration: none; }
@@ -104,3 +110,52 @@ body, html {
 
 .section-map {
   width: 100%; }
+
+.section-form {
+  color: #fff;
+  background: #333;
+  text-align: center; }
+  .section-form .title-1 {
+    padding: 0; }
+
+.form-text {
+  font-size: 18px;
+  font-weight: 300; }
+
+.form-container {
+  margin: 30px auto; }
+
+.form-submit,
+.form-input__phone,
+.form-textarea {
+  display: block;
+  margin: 0 auto; }
+
+.form-submit {
+  background: #ea2727;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-weight: 700; }
+  .form-submit:hover {
+    background: #ff3b2f; }
+  .form-submit:active {
+    background: #ea2727; }
+
+.form-label {
+  color: #ccc;
+  text-align: left;
+  padding: 6px 0; }
+
+.label-textarea {
+  margin-top: 20px; }
+
+.form-submit {
+  margin-top: 40px; }
+
+.form-input__phone,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  max-width: 100%; }
