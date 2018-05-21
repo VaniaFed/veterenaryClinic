@@ -1,3 +1,5 @@
+// GENERAL
+
 .clearfix,
 .clearfix:before,
 .clearfix:after
@@ -35,6 +37,10 @@ body, html
   width: 100%
   margin: 0 auto
   padding: 20px
+
+.section
+  &:nth-child(even)
+    background: #efefef
 
 .title-1
   font-size: 48px
@@ -89,9 +95,23 @@ body, html
 
 // SERVICES
 
-.section
-  &:nth-child(even)
-    background: #efefef
+.services
+  font-size: 0
+  &__title
+    font-size: 24px
+    position: absolute
+    right: 0
+    bottom: 10px
+    left: 0
+    text-align: center
+    color: #fff
+  &-item
+    position: relative
+    background: #000
+  &__img
+    min-height: 100%
+    opacity: .6
+    object-fit: cover
 
 
 // CONTACTS

@@ -45,6 +45,19 @@
   .link-to-top
     display: none
 
+  
+  .services-item
+    max-width: 400px
+    max-height: 400px
+    width: 100%
+    margin: auto
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+
+
+  
+
 @media screen and (max-width: 520px)
   // HEADER
   .header__name-company
@@ -124,13 +137,14 @@
     background: #ea2727
     transition: all .3s
     cursor: pointer
+    z-index: 1
     &:hover
       background: #fff
       border: 2px solid #ea2727
       svg
         transition: transform .5s
         transform: translateY(-8px)
-      svg .active-path
+      .active-path
         fill: #ea2727
     svg
       width: 30px
@@ -144,3 +158,8 @@
       .active-path
         fill: #fff
         transition: fill .35s
+  
+  .services-item
+    width: 25%
+    float: left
+

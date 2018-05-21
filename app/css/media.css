@@ -33,7 +33,15 @@
   .form-submit {
     width: 100%; }
   .link-to-top {
-    display: none; } }
+    display: none; }
+  .services-item {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px; }
+    .services-item:first-child {
+      margin-top: 0; } }
 
 @media screen and (max-width: 520px) {
   .header__name-company {
@@ -94,7 +102,8 @@
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 1; }
     .link-to-top:hover {
       background: #fff;
       border: 2px solid #ea2727; }
@@ -107,7 +116,7 @@
         -webkit-transform: translateY(-8px);
             -ms-transform: translateY(-8px);
                 transform: translateY(-8px); }
-      .link-to-top:hover svg .active-path {
+      .link-to-top:hover .active-path {
         fill: #ea2727; }
     .link-to-top svg {
       width: 30px;
@@ -124,4 +133,7 @@
         fill: #fff;
         -webkit-transition: fill .35s;
         -o-transition: fill .35s;
-        transition: fill .35s; } }
+        transition: fill .35s; }
+  .services-item {
+    width: 25%;
+    float: left; } }

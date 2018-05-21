@@ -37,6 +37,9 @@ body, html {
   margin: 0 auto;
   padding: 20px; }
 
+.section:nth-child(even) {
+  background: #efefef; }
+
 .title-1 {
   font-size: 48px;
   font-weight: bold;
@@ -86,8 +89,24 @@ body, html {
   .header__btn-call:active {
     background: #ea2727; }
 
-.section:nth-child(even) {
-  background: #efefef; }
+.services {
+  font-size: 0; }
+  .services__title {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff; }
+  .services-item {
+    position: relative;
+    background: #000; }
+  .services__img {
+    min-height: 100%;
+    opacity: .6;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .contacts__fa {
   margin-right: 20px;
