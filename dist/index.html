@@ -3,18 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/libs.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="../libs/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/html" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	
-	Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которой над взобравшись дорогу рыбными свой деревни, парадигматическая она сбить даль щеке! Прямо мир агенство о предложения буквенных реторический это.
-
-	<p><img src="img/1.jpg" alt="Alt"></p>
-	<p><img src="img/2.jpg" alt="Alt"></p>
-	<p><img src="img/3.jpg" alt="Alt"></p>
-	
-	<script src="js/libs.min.js"></script>
-
+    <div class="link-to-top" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+            <path class="active-path" fill="#020101" d="M7.7 94.4c1.6 1.6 4.2 1.6 5.8 0l51-51.1 51.1 51.1c1.6 1.6 4.2 1.6 5.8 0 1.6-1.6 1.6-4.2 0-5.8L67.5 34.7c-.8-.8-1.8-1.2-2.9-1.2-1 0-2.1.4-2.9 1.2L7.8 88.6c-1.7 1.6-1.7 4.2-.1 5.8z" data-old_color="#0A0707" data-original="#000000"></path>
+        </svg>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-middle-text">
+                    <h1 class="header__name-company">Ветеринарная клиника</h1>
+                    <h2 class="header__tagline">20 лет мы оказывыем помощь Вашим питомцам!</h2>
+                    <h3 class="header__adres"><i class="fas fa-red header__fa-adres fa-map-marker"></i> Тверь, улица Завидова, 25</h3>
+                    <a class="header__btn-call" href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <div class="container">
+                <h2 class="title-1">Спектр услуг</h2>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container clearfix">
+                <h2 class="title-1">Контакты</h2>
+                <div class="section-left">
+                    <h3 class="title-2 contacts__title-2"><i class="fas fa-red contacts__fa contacts__fa-map fa-map-marker"></i>Адрес клиники</h3>
+                    <h4 class="contacts__info">Тверь, улица Завидова, 25</h4>
+                    <h3 class="title-2 contacts__title-2"><i class="fas fa-red contacts__fa contacts__fa-schedule fa-clock"></i>График работы клиники</h3>
+                    <h4 class="contacts__info">Пн-Пт — с 9:00 до 21 00, Сб-Вс — с 9:00 до 17:00</h4>
+                    <h3 class="title-2 contacts__title-2"><i class="fas contacts__fa fa-red contacts__fa-phone fa-mobile-alt"></i>Телефон</h3>
+                    <h4 class="contacts__info"><a class="contacts__info-link" href="tel:32-10-03">(4822) 32-10-03</a></h4>
+                    <h3 class="title-2 contacts__title-2"><i class="fas contacts__fa fa-red fa-at"></i>Электронная почта</h3>
+                    <h4 class="contacts__info"><a class="contacts__info-link" href="mailto:nina.vet2015@yandex.ru">nina.vet2015@yandex.ru</a></h4>
+                </div>
+                <div class="section-right">
+                    <iframe class="section-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9660b20bccbf15cc7f4e8dcc227463d89b31b73fa9e50eb7043b4b4788ede222&amp;source=constructor" width="813" height="446" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container clearfix">
+                <h2 class="title-1">Фотографии</h2>
+                <div class="photo">
+                    <div class="photo-column">
+                        <div class="photo-item">
+                            <img class="photo__img" src="img/12.jpg" alt="Фотография">
+                        </div>
+                        <div class="photo-item">
+                            <img class="photo__img" src="img/7.jpg" alt="Фотография">
+                        </div>
+                    </div>
+                    <div class="photo-column">
+                        <div class="photo-item">
+                            <img class="photo__img" src="img/11.jpg" alt="Фотография">
+                        </div>
+                        <div class="photo-item">
+                            <img class="photo__img" src="img/9.jpg" alt="Фотография">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="section section-form">
+        <div class="container">
+            <div class="title-1">Оставьте заявку</div>
+            <div class="form-text">Отправьте заявку и мы свяжемся с вами</div>
+            <form id="form" class="form-form" action="">
+                <div class="form-container">
+                    <label class="form-label" for="phone">Номер телефона</label>
+                    <input class="form-input__phone" id="phone" required name="phone" type="text" placeholder="+79000000000">
+                    <label class="form-label label-textarea" for="message">Ваше сообщение</label>
+                    <textarea class="form-textarea" name="message" id="message" cols="30" rows="10" placeholder="Опишите вашу проблему" required></textarea>
+                    <input class="form-submit" type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html>
