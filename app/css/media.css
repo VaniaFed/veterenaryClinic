@@ -134,6 +134,14 @@
         -webkit-transition: fill .35s;
         -o-transition: fill .35s;
         transition: fill .35s; }
+  .services-line {
+    margin-bottom: 20px; }
+    .services-line:last-child {
+      margin-bottom: 0; }
   .services-item {
     width: 25%;
-    float: left; } }
+    float: left;
+    height: 230px;
+    padding-right: 20px; }
+    .services-item:last-child {
+      padding-right: 0; } }

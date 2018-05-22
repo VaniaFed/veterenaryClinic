@@ -22,22 +22,22 @@ $(function() {
     });
 
     
-    var widthEqualHeight = function (el) {
+    // var widthEqualHeight = function (el) {
 
-        var width = el[1].offsetWidth;
+    //     var width = el[1].offsetWidth;
 
-        for (var i = 0; i < el.length; i++) {
-            el[i].style.height = width + 'px';
-        }
-    }
+    //     for (var i = 0; i < el.length; i++) {
+    //         el[i].style.height = width + 'px';
+    //     }
+    // }
 
-    if (document.documentElement.clientWidth > 1024) {
-        var el = document.querySelectorAll(".services-item");
+    // if (document.documentElement.clientWidth > 1024) {
+    //     var el = document.querySelectorAll(".services-item");
 
-        widthEqualHeight (el);
+    //     widthEqualHeight (el);
 
-        window.resize = function() {
-            widthEqualHeight (el);
-        }
-    }
+    //     window.resize = function() {
+    //         widthEqualHeight (el);
+    //     }
+    // }
 });
