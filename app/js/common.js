@@ -21,7 +21,7 @@ $(function() {
             return false;
     });
 
-    $(".form-submit-popup").submit(function() {
+    $("#popup-form").submit(function() {
         $.ajax({
             type: "POST",
             url: "/mail2.php",
