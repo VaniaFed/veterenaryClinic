@@ -1,6 +1,6 @@
 <?php
 
-    $recepient = "ochtihy.ivan@yandex.ru";
+    $recepient = "nina.vet2015@yandex.ru";
     $sitename = "Ветеринарная клиника";
 
     $phone = trim($_POST["phone"]);
