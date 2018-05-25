@@ -198,3 +198,6 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 30px; }
+
+.popup-container {
+  display: inline-block; }
