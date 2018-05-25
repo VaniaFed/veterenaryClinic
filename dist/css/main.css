@@ -188,9 +188,6 @@ body, html {
 .mfp-content {
   text-align: center; }
 
-.popup-container {
-  display: inline-block; }
-
 .popup-form-container {
   background: #eee;
   padding: 50px 40px;

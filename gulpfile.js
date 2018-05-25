@@ -57,8 +57,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['clean', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/css/main.css',
-		'app/css/libs.min.css'
+		'app/css/*.css'
 		])
 	.pipe(gulp.dest('dist/css'))
 
