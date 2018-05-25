@@ -26,6 +26,9 @@ input, input:active
 a
   text-decoration: none
 
+.hidden
+  display: none
+
 body, html
   height: 100%
   width: 100%
@@ -83,7 +86,7 @@ body, html
 .header__btn-call
   color: #fff
   background: #ea2727
-  padding: 12px 32px
+  padding: 16px 30px
   font-weight: bold
   display: inline-block
   margin: 40px 0 0
@@ -151,40 +154,58 @@ body, html
   font-weight: 300
 
 .form-container
-  margin: 30px auto
+  margin: 50px auto
 
 .form-submit,
 .form-input__phone,
 .form-textarea
   display: block
   margin: 0 auto
+  width: 100%
+  max-width: 100%
+  border-radius: 4px
+  border: none
 
 .form-submit
   background: #ea2727
-  border: none
   color: #fff
   cursor: pointer
-  padding: 12px 20px
   font-weight: 700
   &:hover
     background: #ff3b2f
   &:active
     background: #ea2727
 
-.form-label
-  color: #ccc
-  text-align: left
-  padding: 6px 0
-
-.label-textarea
-  margin-top: 20px
-
 .form-submit
-  margin-top: 40px
+  padding: 26px
+  text-transform: uppercase
   
 .form-input__phone,
 .form-textarea
-    width: 100%
-    padding: 12px 16px
-    max-width: 100%
+    padding: 20px
+    line-height: 1.5
+    border: 1px solid #aaa
+    outline: none
 
+.form-textarea,
+.form-submit
+  margin-top: 20px
+  
+// popup
+
+.mfp-content
+  text-align: center
+
+.popup-container
+  display: inline-block
+
+.popup-form-container
+  background: #eee
+  padding: 50px 40px
+  max-width: 460px
+
+.popup-form-title
+  font-size: 24px
+  text-transform: uppercase
+  text-align: center
+  padding-bottom: 30px

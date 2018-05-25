@@ -8,6 +8,7 @@
     <link href="../libs/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/html" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -17,6 +18,18 @@
             <path class="active-path" fill="#020101" d="M7.7 94.4c1.6 1.6 4.2 1.6 5.8 0l51-51.1 51.1 51.1c1.6 1.6 4.2 1.6 5.8 0 1.6-1.6 1.6-4.2 0-5.8L67.5 34.7c-.8-.8-1.8-1.2-2.9-1.2-1 0-2.1.4-2.9 1.2L7.8 88.6c-1.7 1.6-1.7 4.2-.1 5.8z" data-old_color="#0A0707" data-original="#000000"></path>
         </svg>
     </div>
+    <div class="hidden">
+        <div id="popup-container" class="popup-container">
+            <form id="popup-form" class="form-form">
+                <div class="popup-form-container form-container">
+                    <h4 class="popup-form-title">Отправьте заявку и мы свяжемся с вами!</h4>
+                    <input class="form-input__phone" id="phone" required name="phone-popup" type="text" placeholder="Номер Вашего телефона">
+                    <textarea class="form-textarea" name="message-popup" id="message" rows="6" placeholder="Опишите вашу проблему" required></textarea>
+                    <input class="form-submit form-submit-popup" type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -24,7 +37,7 @@
                     <h1 class="header__name-company">Ветеринарная клиника</h1>
                     <h2 class="header__tagline">20 лет мы оказывыем помощь Вашим питомцам!</h2>
                     <h3 class="header__adres"><i class="fas fa-red header__fa-adres fa-map-marker"></i> Тверь, улица Завидова, 25</h3>
-                    <a class="header__btn-call" href="#">Заказать звонок</a>
+                    <a class="header__btn-call" href="#popup-container">Заказать звонок</a>
                 </div>
             </div>
         </header>
@@ -252,10 +265,8 @@
             <div class="form-text">Отправьте заявку и мы свяжемся с вами</div>
             <form id="form" class="form-form" action="">
                 <div class="form-container">
-                    <label class="form-label" for="phone">Номер телефона</label>
-                    <input class="form-input__phone" id="phone" required name="phone" type="text" placeholder="+79000000000">
-                    <label class="form-label label-textarea" for="message">Ваше сообщение</label>
-                    <textarea class="form-textarea" name="message" id="message" cols="30" rows="10" placeholder="Опишите вашу проблему" required></textarea>
+                    <input class="form-input__phone" id="phone" required name="phone" type="text" placeholder="Номер Вашего телефона">
+                    <textarea class="form-textarea" name="message" id="message" rows="6" placeholder="Опишите вашу проблему" required></textarea>
                     <input class="form-submit" type="submit" value="Отправить">
                 </div>
             </form>
@@ -263,6 +274,7 @@
     </section>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>
