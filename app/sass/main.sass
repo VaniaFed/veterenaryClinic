@@ -1,16 +1,17 @@
-// GENERAL
-
-.clearfix,
-.clearfix:before,
-.clearfix:after
+.clearfix
   content: ''
   display: block
   clear: both
+  &:before, &:after
+    content: ''
+    display: block
+    clear: both
 
 *
+  -webkit-box-sizing: border-box
   box-sizing: border-box
 
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6
   padding: 0
   margin: 0
 
@@ -20,8 +21,13 @@ label, input, textarea
 img
   width: 100%
 
-input, input:active
+frame
+  border: none
+
+input
   outline: none
+  &:active
+    outline: none
 
 a
   text-decoration: none
@@ -41,9 +47,8 @@ body, html
   margin: 0 auto
   padding: 20px
 
-.section
-  &:nth-child(even)
-    background: #efefef
+.section:nth-child(even)
+  background: #efefef
 
 .title-1
   font-size: 48px
@@ -57,18 +62,17 @@ body, html
 .fa-red
   color: #ea2727
 
-
-// HEADER
-
 .header
   background: url(../img/bg.jpg) no-repeat center
+  -webkit-background-size: cover
   background-size: cover
-  box-shadow: 0 0 0 1500px rgba(0, 0, 0, .7) inset
+  -webkit-box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset
+  box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.7) inset
 
 .header__name-company
   color: #fff
   font-size: 60px
-  
+
 .header__tagline
   color: #ccc
   font-size: 24px
@@ -89,46 +93,52 @@ body, html
   padding: 16px 30px
   font-weight: bold
   display: inline-block
+  outline: none
   margin: 40px 0 0
   &:hover
+    outline: none
     background: #ff3b2f
   &:active
+    outline: none
     background: #ea2727
-
-
-// SERVICES
 
 .services
   font-size: 0
-  &__title
-    font-size: 16px
-    color: #000
-  &-item
-    position: relative
-    background: #fff
-    background-clip: content-box
-  &__img
-    max-height: 120px
-    opacity: .8
-    object-fit: cover
-  &-info
-    padding: 20px 22px
+
+.services__title
+  font-size: 16px
+  color: #000
+
+.services-item
+  position: relative
+  background: #fff
+  -webkit-background-clip: content-box
+  background-clip: content-box
+
+.services__img
+  max-height: 120px
+  opacity: .8
+  -o-object-fit: cover
+  object-fit: cover
+
+.services-info
+  padding: 20px 22px
 
 .img-container
   background: #000
 
-
-// CONTACTS
-
 .contacts__fa
   margin-right: 20px
   width: 20px
-  &-map
-    margin-left: 5px
-  &-phone
-    margin-left: 6px
-  &-schedule
-    margin-left: 1px
+
+.contacts__fa-map
+  margin-left: 5px
+
+.contacts__fa-phone
+  margin-left: 6px
+
+.contacts__fa-schedule
+  margin-left: 1px
 
 .contacts__info-link
   text-decoration: underline
@@ -156,13 +166,12 @@ body, html
 .form-container
   margin: 50px auto
 
-.form-submit,
-.form-input__phone,
-.form-textarea
+.form-submit, .form-input__phone, .form-textarea
   display: block
   margin: 0 auto
   width: 100%
   max-width: 100%
+  -webkit-border-radius: 4px
   border-radius: 4px
   border: none
 
@@ -175,23 +184,24 @@ body, html
     background: #ff3b2f
   &:active
     background: #ea2727
-
-.form-submit
   padding: 26px
   text-transform: uppercase
-  
-.form-input__phone,
-.form-textarea
-    padding: 20px
-    line-height: 1.5
-    border: 1px solid #aaa
-    outline: none
 
-.form-textarea,
+.form-input__phone
+  padding: 20px
+  line-height: 1.5
+  border: 1px solid #aaa
+  outline: none
+
+.form-textarea
+  padding: 20px
+  line-height: 1.5
+  border: 1px solid #aaa
+  outline: none
+  margin-top: 20px
+
 .form-submit
   margin-top: 20px
-  
-// popup
 
 .mfp-content
   text-align: center
