@@ -29,6 +29,9 @@ input {
   input:active {
     outline: none; }
 
+iframe {
+  border: none; }
+
 a {
   text-decoration: none; }
 
@@ -53,7 +56,8 @@ body, html {
 .title-1 {
   font-size: 48px;
   font-weight: bold;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  text-align: center; }
 
 .title-2 {
   font-size: 30px;
@@ -219,3 +223,24 @@ body, html {
 
 .popup-container {
   display: inline-block; }
+
+.news .title-2 {
+  font-weight: 700; }
+
+.news-item {
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 21px 0 rgba(50, 50, 50, 0.1);
+          box-shadow: 0 0 21px 0 rgba(50, 50, 50, 0.1);
+  margin: auto;
+  padding: 30px 40px;
+  margin-bottom: 20px; }
+  .news-item:last-child {
+    margin-bottom: 0; }
+
+.news__text {
+  margin-top: 6px; }
+
+.news__date {
+  margin-top: 14px; }
